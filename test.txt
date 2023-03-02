@@ -12,18 +12,17 @@ const getPokeInfo = async () => {
     }
     const res = await axios(response);
     console.log(res)
-    for (let i = 0; i < 3; i++) {
-        // console.log(`${res[i].data.name}`);
-        // console.log(`${res[i].data.order}`);
-        // console.log(`${res.data.abilities[0].ability.name} , ${res.data.abilities[1].ability.name}`);
+    console.log(`${res.data.name}`);
+    console.log(`${res[i].data.order}`);
+    console.log(`${res.data.abilities[0].ability.name} , ${res.data.abilities[1].ability.name}`);
     }
 }
 
 getPokeInfo();
 app.get('/',(req,res)=>{
     res.render('pokemons',{
-        // name,
-        // order,
-        // abilities
+    name: `${res.data.name}`,
+    order: `${res.data.order}`,
+    abilities: `${res.data.abilities[0].ability.name} , ${res.data.abilities[1].ability.name}`,
     })
 })

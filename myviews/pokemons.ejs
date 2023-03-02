@@ -10,11 +10,25 @@
     
     <div class="card" style="width: 18rem; background-color: gray">
       <div class="card-body">
-        <h5 class="card-title">Pokemon Name: <!--<%= name %>--></h5>
-        <h3 class="card-title">Pokemon Order:  <!--<%= order %>--></h3>
-        <p class="card-text">Pokemon abilities: <!--<%abilities %>--></p>
+        <h3 class="card-title">Pokemon Name: <%= ditto.name %></h3>
+        <h5 class="card-title">Pokemon Order:  <%= ditto.order %></h5>
+        <p class="card-text">Pokemon abilities:  <%= ditto.abilities[0].ability.name%>, <%= ditto.abilities[1].ability.name%></p>
       </div>
     </div>
-    
+    <div class="card" style="width: 18rem; background-color: gray">
+      <div class="card-body">
+        <h3 class="card-title">Pokemon Name: <%= squirtle.name %></h3>
+        <h5 class="card-title">Pokemon Order:  <%= squirtle.order %></h5>
+        <p class="card-text">Pokemon abilities: <%= squirtle.abilities[0].ability.name%>, <%= squirtle.abilities[1].ability.name%></p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; background-color: gray">
+      <div class="card-body">
+        <h3 class="card-title">Pokemon Name: <%= pikachu.name %></h3>
+        <h5 class="card-title">Pokemon Order:  <%= pikachu.order %></h5>
+        <p class="card-text">Pokemon abilities: <%= pikachu.abilities[0].ability.name%>, <%= pikachu.abilities[1].ability.name%></p>
+      </div>
+    </div>
+
   </body>
 </html>

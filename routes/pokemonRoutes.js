@@ -1,7 +1,8 @@
-const express = require('express');
-const pokeController = require('../controllers/pokeController');
+// const express = require('express');
+// const pokeController = require('../controllers/pokeController');
+// const router = express.Router();
 
-const router = express.Router();
-router.get('/', pokeController.poke_index);
+// router.get('/', pokeController.poke_index);
 
-module.exports = router;
+
+// module.exports = router;

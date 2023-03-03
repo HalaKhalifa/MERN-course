@@ -5,24 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemons</title>
+    <style>
+      .card{
+        width:30%;
+        float:left;
+        margin: .5rem;
+        text-align: center;
+        background-color: rgb(142, 168, 195);
+      }
+
+    </style>
   </head>
   <body>
-    
-    <div class="card" style="width: 18rem; background-color: gray">
-      <div class="card-body">
+    <h1 style="text-align:center ;">Pokemons</h1>
+    <div class="card" >
+      <img src="<%= ditto.sprites.front_default %>" alt="<%= ditto.name %>" style=" ">
+      <div class="card-body" >
         <h3 class="card-title">Pokemon Name: <%= ditto.name %></h3>
         <h5 class="card-title">Pokemon Order:  <%= ditto.order %></h5>
         <p class="card-text">Pokemon abilities:  <%= ditto.abilities[0].ability.name%>, <%= ditto.abilities[1].ability.name%></p>
       </div>
     </div>
-    <div class="card" style="width: 18rem; background-color: gray">
-      <div class="card-body">
+    <div class="card">
+      <img src="<%= squirtle.sprites.front_default %>" alt="<%= squirtle.name %>" >
+      <div class="card-body" >
         <h3 class="card-title">Pokemon Name: <%= squirtle.name %></h3>
         <h5 class="card-title">Pokemon Order:  <%= squirtle.order %></h5>
         <p class="card-text">Pokemon abilities: <%= squirtle.abilities[0].ability.name%>, <%= squirtle.abilities[1].ability.name%></p>
       </div>
     </div>
-    <div class="card" style="width: 18rem; background-color: gray">
+    <div class="card">
+      <img src="<%= pikachu.sprites.front_default %>" alt="<%= pikachu.name %>">
       <div class="card-body">
         <h3 class="card-title">Pokemon Name: <%= pikachu.name %></h3>
         <h5 class="card-title">Pokemon Order:  <%= pikachu.order %></h5>

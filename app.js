@@ -40,7 +40,6 @@ app.get("/", async (req, res) => {
   const ditto = await (dittoInfo());
   const squirtle = await (squirtleInfo());
   const pikachu = await (pikachuInfo());
-
   res.render("pokemons", { ditto, squirtle, pikachu });
 });
 // app.get('/new',(req, res)=>{res.send(pikachu)})

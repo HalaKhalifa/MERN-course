@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Records</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+  </head>
+  <body>
+    <h1>
+      <% users.forEach(function(user, index) { %>
+        <span><%= user.name %></span><%= index !== users.length - 1 ? ', ' : '' %>
+      <% }); %>
+      Records
+      </h1>
+    <h2>Bills</h2>
+    <ul>
+      <% bills.forEach(function(bill) { %>
+        <li>The bill of id " <%= bill._id %> " with the amount of <%= bill.amount %></li>
+      <% }); %>
+    </ul>
+
+    <h2>Customers</h2>
+    <ul>
+      <% customers.forEach(function(customer) { %>
+        <li>The customer of id " <%= customer._id %> " with the name of <%= customer.name %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

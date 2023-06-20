@@ -25,3 +25,7 @@
 //   module.exports = {
 //     poke_index
 //   }
+
+const getAllRecords = (req, res) => {
+
+}
